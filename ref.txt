@@ -1,0 +1,5 @@
+・gqlgenコマンドが使えない
+go run github.com/99designs/gqlgen init
+を代わりに使う
+
+https://qiita.com/Y_uuu/items/54c2749eca5b67ae9583

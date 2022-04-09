@@ -1,0 +1,32 @@
+mutation {
+    createPost(title: "Yahoo JAPAN", url: "https://www.yahoo.co.jp/") {
+        id
+        title
+        votes
+        url
+        createdAt
+    }
+}
+
+mutation {
+    createPost(title: "Google", url: "https://www.google.com/") {
+        id
+        title
+        votes
+        url
+        createdAt
+    }
+}
+
+{
+    allPosts(orderBy: createdAt_DESC, first :2, skip: 0) {
+        id
+        title
+        votes
+        url
+        createdAt
+    }
+    _allPostsMeta {
+        count
+    }
+}
